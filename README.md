@@ -51,7 +51,8 @@ for a production build.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). Currently experiencing a bit of trouble
+with the test run. See https://github.com/angular/angular-cli/issues/4817.
 
 ## Running end-to-end tests
 
