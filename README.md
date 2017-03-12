@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
+Please follow the installation instruction at the link above if you do not have Angular CLI installed.
+
 ## Dependencies
 Run `yarn` to load the `node_modules`.
 
