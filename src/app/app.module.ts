@@ -15,6 +15,7 @@ import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component'
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroService } from './heroes/shared/hero.service';
 import { HeroSearchComponent } from './heroes/hero-search/hero-search.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 /**
  * Every Angular app has at least one Angular module class, the root module, conventionally
@@ -58,7 +59,8 @@ import { HeroSearchComponent } from './heroes/hero-search/hero-search.component'
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    NotFoundComponent
   ],
 
   /*
