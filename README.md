@@ -1,22 +1,43 @@
+![Angular + Spring Logo](src/assets/angular-plus-spring.png)
+
 # Angular Tour Of Heroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
+This project takes the [Angular Tour of Heroes Tutorial](https://angular.io/docs/ts/latest/tutorial/) and combines 
+[Angular CLI](https://github.com/angular/angular-cli) and [Spring Boot](http://projects.spring.io/spring-boot/).
 
-Please follow the installation instruction at the link above if you do not have Angular CLI installed.
+## Prerequisites
 
-## Dependencies
-Run `yarn` to load the `node_modules`.
+### Angular CLI
 
-## Development Server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200`. The app will automatically reload if you change 
-any of the source files.
+Please follow the [Angular CLI instructions](https://github.com/angular/angular-cli#installation).
+
+### Spring
+
+All Spring server side dependencies will be pulled in using the included script, `gradlew` or `gradle.bat` for Windows. 
+Note that I haven't tested on Windows. The Spring server is optional. Everything will work fine using only the Angular
+CLI managed development server, `ng serve`. Otherwise Spring requires Java 1.8 or greater. [OpenJDK 8](http://openjdk.java.net/projects/jdk8/) 
+works fine.
+
+### JS Dependencies
+
+Pick either [npm](https://docs.npmjs.com/cli/install) or [yarn](https://yarnpkg.com/lang/en/docs/install/) for the 
+JavaScript dependencies.
+
+## Quick Start
+
+1. Run `yarn install` or `npm install`.
+1. Run `ng serve` to start the Angular CLI managed development server.
+1. Navigate to `http://localhost:4200`. The app will automatically reload if you change any of the source files.
 
 ## Spring Web Server
-Run `./gradlew bootRun` to start the Spring server with an embedded Tomcat. Navigate to `http://localhost:8093`. It also
-serves up the Angular client. The distribution is copied to `src/main/resources/static`.
 
-The development server can run at the same time. The idea is to have the Spring Server provide a convenient spot for 
-REST endpoints. `in-memory-data.server.ts` could be replaced with Java REST controllers (servlets).
+Run `./gradlew bootRun` from the project root to start the Spring server with an embedded Tomcat. Navigate to 
+`http://localhost:8093`. It also serves up the Angular client. The distribution is copied to 
+`src/main/resources/static`.
+
+The development server, `ng serve` can run at the same time as the Spring Server. The idea is to have the Spring Server 
+provide a convenient spot for REST endpoints. `in-memory-data.server.ts` could be replaced with Java REST controllers 
+(servlets).
 
 ## Code scaffolding
 
