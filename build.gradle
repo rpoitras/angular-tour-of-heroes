@@ -48,7 +48,7 @@ dependencies {
 }
 
 task jsBuild(type: NpmTask) {
-  args = ['run', 'build']
+  args = ['run', 'buildprod']
 }
 
 compileJava.dependsOn jsBuild
