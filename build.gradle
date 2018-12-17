@@ -6,7 +6,7 @@ buildscript {
   }
   dependencies {
     classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: spring_boot_version
-    classpath group: 'org.springframework.build.gradle', name: 'propdeps-plugin', version: prop_deps_version
+    classpath group: 'io.spring.gradle', name: 'propdeps-plugin', version: prop_deps_version
     classpath group: 'com.moowork.gradle', name: 'gradle-node-plugin', version: gradle_node_version
   }
 }
@@ -14,6 +14,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'propdeps'

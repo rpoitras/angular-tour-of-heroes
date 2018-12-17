@@ -1,6 +1,7 @@
 server:
   port: 8093
-  contextPath: '/'
+  servlet:
+    contextPath: '/'
 
 spring:
   application:
