@@ -57,5 +57,5 @@ task jsBuild(type: NpmTask) {
   args = ['run', 'buildprod']
 }
 
-compileJava.dependsOn npmInstall, jsBuild
+compileJava.dependsOn(npmInstall, jsBuild)
 defaultTasks 'clean', 'bootRun'
