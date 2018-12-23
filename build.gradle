@@ -48,6 +48,11 @@ dependencies {
   testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
 
+task npmInstall(type: Exec) {
+  workingDir './'
+  commandLine 'npm', 'install'
+}
+
 task jsBuild(type: NpmTask) {
   args = ['run', 'buildprod']
 }
