@@ -4,6 +4,11 @@ pipeline {
         stage('build') {
             steps {
                 sh 'gradlew -version'
+                sh 'echo "Hello Willie"'
+                sh '''
+                    echo "Multiline shell steps works too"
+                    ls -lah
+                '''
             }
         }
     }
