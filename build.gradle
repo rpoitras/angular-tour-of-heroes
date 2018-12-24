@@ -46,7 +46,7 @@ dependencies {
   compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
   compile group: 'javax.inject', name: 'javax.inject', version: javax_inject_version
 
-  optional group: 'org.springframework.boot', name: 'spring-boot-configuration-processor'
+  annotationProcessor group: 'org.springframework.boot', name: 'spring-boot-configuration-processor'
 
   providedRuntime group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat'
 
